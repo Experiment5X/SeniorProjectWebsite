@@ -1,0 +1,67 @@
+html
+    head
+        link(
+            rel="stylesheet",
+            href="css/style.css"
+        )
+        link(
+            rel="stylesheet",
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css",
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm",
+            crossorigin="anonymous"
+        )
+        link(
+            href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/solar/bootstrap.min.css", 
+            rel="stylesheet", 
+            integrity="sha384-h5kYMLFNMyLXdVYK3MKZeOfXMdU6XqV1do5KyjoYZGlW1FJOj+5qr9u1d7NNCH4N", 
+            crossorigin="anonymous"
+        )
+
+        script(
+            src='https://code.jquery.com/jquery-3.2.1.slim.min.js', 
+            integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', 
+            crossorigin='anonymous'
+        )
+        script(
+            src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', 
+            integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', 
+            crossorigin='anonymous'
+        )
+        script(
+            src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', 
+            integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', 
+            crossorigin='anonymous'
+        )
+
+    body
+        #nav-banner 
+        .bg-dark
+            .container
+                nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+                    a(href="index.html").navbar-brand Writing Style
+                    button(
+                        type="button", 
+                        data-toggle="collapse", 
+                        data-target="#navbarNavAltMarkup", 
+                        aria-controls="navbarNavAltMarkup", 
+                        aria-expanded="false", 
+                        aria-label="Toggle navigation"
+                    ).navbar-toggler
+                        span.navbar-toggler-icon
+
+                    .collapse.navbar-collapse#navbarNavAltMarkup
+                        .navbar-nav
+                            a(href="index.html").nav-item.nav-link Home
+                            a(href="timecards.html").nav-item.nav-link Time Cards
+                            a(href="domain_model.html").nav-item.nav-link Domain Model
+                            a(href="https://docs.google.com/document/d/1BiFsHfhZNW3AWeC1OzEuWoZ0l2qn2k0lERPgwUSDPhs/edit?usp=sharing").nav-item.nav-link Project Plan
+                            a(href="https://docs.google.com/spreadsheets/d/150nL1_cFjAKu7AyYM7Bgv5mIV_V2HXD0XU7KvPVDZ6Q/edit#gid=0").nav-item.nav-link Metrics
+                            a(href="prototype/index.html").nav-item.nav-link GUI Prototype
+        .container
+            block container-content
+            .row
+                .col-sm-2
+                .col-sm-8.p-3
+                    block content
+                .col-sm-2
+
