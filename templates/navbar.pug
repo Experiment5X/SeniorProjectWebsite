@@ -18,8 +18,8 @@ html
         )
 
         script(
-            src='https://code.jquery.com/jquery-3.2.1.slim.min.js', 
-            integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', 
+            src='https://code.jquery.com/jquery-3.3.1.min.js', 
+            integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', 
             crossorigin='anonymous'
         )
         script(
@@ -33,6 +33,7 @@ html
             crossorigin='anonymous'
         )
 
+        block additional_head
     body
         #nav-banner 
         .bg-dark
@@ -52,11 +53,13 @@ html
                     .collapse.navbar-collapse#navbarNavAltMarkup
                         .navbar-nav
                             a(href="index.html").nav-item.nav-link Home
-                            a(href="timecards.html").nav-item.nav-link Time Cards
+                            a(href="timecards1.html").nav-item.nav-link Time Cards Fall
+                            a(href="timecards2.html").nav-item.nav-link Time Cards Spring
                             a(href="domain_model.html").nav-item.nav-link Domain Model
                             a(href="https://docs.google.com/document/d/1BiFsHfhZNW3AWeC1OzEuWoZ0l2qn2k0lERPgwUSDPhs/edit?usp=sharing").nav-item.nav-link Project Plan
                             a(href="https://docs.google.com/spreadsheets/d/150nL1_cFjAKu7AyYM7Bgv5mIV_V2HXD0XU7KvPVDZ6Q/edit#gid=0").nav-item.nav-link Metrics
                             a(href="prototype/index.html").nav-item.nav-link GUI Prototype
+                            a(href="word_definition_vote.html").nav-item.nav-link Word Vote
         .container
             block container-content
             .row

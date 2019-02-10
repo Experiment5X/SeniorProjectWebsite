@@ -14,3 +14,16 @@
     max-width: 10rem;
     max-height: 10rem;
 }
+
+#word-option-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0.2rem;
+}
+
+.alt-word-button {
+    margin: 0.2rem;
+}
