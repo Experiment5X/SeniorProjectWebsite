@@ -1,10 +1,4 @@
 function initiateVoteSession(done) {
-    /*return {
-        wordId: 1,
-        word: 'like',
-        possibleDefinitions: ['SAVORINESS', 'PLEASURE', 'DESIRE', 'LOVE', 'IMITATION', 'MANNER AND MEANS']
-    };*/
-
     $.get('http://writingstyle.ddns.net/surveyQuery', function(data) {
         done(parseVoteResponse(data));
     });
@@ -53,8 +47,16 @@ function vote(word, round) {
             } else {
                 loadRound(roundInfo);
             }
+        } else {
+            displayEnd();
         }
     })
+}
+
+function displayEnd() {
+    $('#word-option-container').empty();
+    $('#head-word').text('Done');
+    $('#head-word').css('font-style', 'italic');
 }
 
 function loadRound(round) {
